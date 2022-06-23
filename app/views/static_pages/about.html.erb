@@ -1,0 +1,7 @@
+<% provide(:title, t("title.about")) %>
+<h1><%= t ".title" %></h1>
+<p>
+  <%= raw t(".p", footer_rails_link: Settings.footer.rails_link, learnenough: Settings.learnenough,
+   rails_book: Settings.rails.book, screencasts: Settings.screencasts,
+   footer_rails_link: Settings.footer.rails_link) %>
+</p>

@@ -1,0 +1,8 @@
+<% provide(:title, t("title.help")) %>
+<h1><%= t ".title"%></h1>
+<p>
+  <%= t ".service_html_first" %>
+  <%= link_to t(".service_html_first"), Settings.rails.help %>.
+  <% t ".service_html_last"%>
+  <a href= <%= Settings.rails.book %>><em><%= t ".rails_book" %></em></a>.
+</p>
