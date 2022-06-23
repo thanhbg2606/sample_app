@@ -22,3 +22,7 @@ learnenough:
 
 screencasts:
   https://screencasts.railstutorial.org/
+
+helpers:
+  users:
+    size: 80
