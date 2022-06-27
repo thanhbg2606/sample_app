@@ -1,0 +1,56 @@
+vi:
+  title:
+    about: "Về "
+    home: "Trang Chủ"
+    help: "Trợ Giúp"
+    contact: "Liên Hệ"
+    sign_up: "Đăng Ký"
+  page_title: "Ruby on Rails Tutorial Sample App"
+  layouts:
+    header:
+      title: "Sample App"
+      home: "Trang chủ"
+      login: "Đăng nhập"
+      help: "Trợ giúp"
+    footer:
+      about: "Về"
+      contact: "Liên hệ"
+      news: "Tin tức"
+      rails_link: "Hướng dẫn Ruby on Rails"
+      michale_link: "Michael Hartl"
+      by: "bởi"
+  static_pages:
+    home:
+      title: "Sample App"
+      provide_title: "Trang chủ"
+      service_html_first: "Đây là trang chủ của"
+      service_html_last: "Sample App"
+      rails_href: "Hướng dẫn Ruby on Rails"
+      button_title: "Đăng ký ngay"
+      welcome: "Chào mừng đến Sample App"
+    help:
+      title: "Trợ giúp"
+      provide_title: "Trợ giúp"
+      service_html_first: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại"
+      service_html_last: "Để nhận trợ giúp về ứng dụng mẫu này, hãy xem"
+      rails_help: "Trợ giúp Hướng dẫn về Rails"
+      rails_book: "Sách Hướng dẫn Ruby on Rails"
+    about:
+      title: "Về chúng tôi"
+      p: "<a href= %{footer_rails_link} ><em>Hướng dẫn Ruby on Rails
+          </em></a>, phần của
+          <a href= %{learnenough} >Learn Enough</a> của hướng dẫn, là
+          <a href= %{rails_book} >sách</a> và
+          <a href= %{screencasts} >screencast series</a>
+          học phát triển web với
+          <a href= %{footer_rails_link} >Ruby on Rails</a>.
+          Đây là hướng dẫn Sample app."
+    contact:
+      title: "Liên hệ"
+      contact_content: "Liên hệ với Hướng dẫn về Ruby on Rails về ứng dụng sample tại"
+      contact_page: "trang liên hệ"
+  helper:
+    application_helper:
+      base_title: "Ứng dụng mẫu hướng dẫn Ruby On Rails"
+  user:
+    header: "Đây sẽ là trang đăng ký cho người dùng mới."
