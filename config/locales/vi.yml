@@ -52,5 +52,19 @@ vi:
   helper:
     application_helper:
       base_title: "Ứng dụng mẫu hướng dẫn Ruby On Rails"
-  user:
+  users:
     header: "Đây sẽ là trang đăng ký cho người dùng mới."
+    new:
+      provide_title: "Đăng_ký"
+      title: "Đăng ký"
+      btn_title: "Tạo tài khoản"
+      password: "Mật khẩu"
+      password_confirmation: "Xác nhận"
+      name: "Tên"
+      email: "Email"
+    show:
+      not_found: "Không tìm thấy User"
+  shared:
+    error_messages:
+      the_form_contains: "Biểu mẫu chứa"
+      error: "Lỗi"

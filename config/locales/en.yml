@@ -54,5 +54,19 @@ en:
   helper:
     application_helper:
       base_title: "Ruby on Rails Tutorial Sample App"
-  user:
+  users:
     header: "This will be a signup page for new users."
+    new:
+      provide_title: "sign_up"
+      title: "Sign up"
+      btn_title: "Create my account"
+      password: "Password"
+      password_confirmation: "Confirmation"
+      name: "Name"
+      email: "Email"
+    show:
+      not_found: "Not found User"
+  shared:
+    error_messages:
+      the_form_contains: "The form contains"
+      error: "Error"
