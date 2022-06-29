@@ -10,6 +10,8 @@ import "channels"
 require("jquery")
 import "bootstrap"
 
+require("pagy/extras/bootstrap")
+
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
