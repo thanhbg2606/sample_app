@@ -105,6 +105,16 @@ vi:
       title: "Người dùng"
       delete: "Xóa"
       confirm: "You sure?"
+    following:
+      following: "Đang theo dõi"
+    followers:
+      followers: "Người theo dõi"
+    follow:
+      follow: "Theo dõi"
+    unfollow:
+      unfollow: "Bỏ theo dõi"
+    show_follow:
+      micropost: "Bài đăng: "
   shared:
     error_messages:
       the_form_contains: "Biểu mẫu chứa"
@@ -115,6 +125,9 @@ vi:
     micropost_form:
       placeholder: "Soạn micropost mới ... "
       post: "Đăng"
+    stats:
+      following: "following"
+      followers: "followers"
   sessions:
     new:
       btn_signup: "Đăng ký ngay!"
@@ -192,3 +205,6 @@ vi:
             image:
               too_big: "không quá 5MB"
               wrong_format: "Phải là một định dạng hình ảnh hợp lệ"
+  relationships:
+    follow_fail: "Follow thất bai"
+    unfollow_fail: "Unfollow thất bại"
