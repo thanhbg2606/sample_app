@@ -1,7 +1,9 @@
 class User < ApplicationRecord
+  has_many :microposts, dependent: :destroy
   attr_accessor :remember_token, :activation_token, :reset_token
 
-  scope :asc_name_user, ->{order(name: :asc)}
+  scope :asc_name_user, ->{order name: :asc}
+  scope :recent_posts, ->{order created_at: :desc}
 
   USER_ATTRS = %w(name email password password_confirmation).freeze
 
@@ -58,6 +60,10 @@ class User < ApplicationRecord
 
   def password_reset_expired?
     reset_sent_at < Settings.user.time_password_expired.hours.ago
+  end
+
+  def feed
+    microposts.recent_posts
   end
 
   class << self

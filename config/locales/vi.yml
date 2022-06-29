@@ -33,6 +33,7 @@ vi:
       rails_href: "Hướng dẫn Ruby on Rails"
       button_title: "Đăng ký ngay"
       welcome: "Chào mừng đến Sample App"
+      feed: "Bài đăng"
     help:
       title: "Trợ giúp"
       provide_title: "Trợ giúp"
@@ -78,6 +79,7 @@ vi:
       email: "Email"
     show:
       not_found: "Không tìm thấy User"
+      microposts: "Số bài đăng"
     create:
       success: "Chảo mừng đến Sample App"
       info: "Vui lòng kiểm tra email để kích hoạt tài khoản của bạn."
@@ -107,6 +109,12 @@ vi:
     error_messages:
       the_form_contains: "Biểu mẫu chứa"
       error: "Lỗi"
+    user_info:
+      my_profile: "Trang cá nhân"
+      micropost: "bài đăng"
+    micropost_form:
+      placeholder: "Soạn micropost mới ... "
+      post: "Đăng"
   sessions:
     new:
       btn_signup: "Đăng ký ngay!"
@@ -165,3 +173,22 @@ vi:
       flash_danger: "Đặt lại mật khẩu đã hết hạn."
     get_user:
       email_not_found: "Không tìm thấy email"
+  microposts:
+    micropost:
+      posted: "Đã đăng"
+      ago: "trước."
+      delete: "Xóa"
+      you_sure: "Bạn chắc muốn xóa?"
+    create:
+      success: "Đã đăng thành công"
+    destroy:
+      success: "Đã xóa bài đăng"
+      danger: "Xóa bài đăng thất bại"
+  activerecord:
+    errors:
+      models:
+        micropost:
+          attributes:
+            image:
+              too_big: "không quá 5MB"
+              wrong_format: "Phải là một định dạng hình ảnh hợp lệ"
