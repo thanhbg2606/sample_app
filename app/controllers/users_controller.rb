@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :admin_user, only: %i(destroy)
-  before_action :find_user, only: %i(show update edit destroy)
+  before_action :find_user, only: %i(show update edit destroy following)
   before_action :logged_in_user, except: %i(new create)
   before_action :correct_user, only: %i(edit update)
 
@@ -30,7 +30,7 @@ class UsersController < ApplicationController
   end
 
   def update
-    if @user.update(user_params)
+    if @user.update user_params
       flash[:success] = t(".success")
       redirect_to @user
     else

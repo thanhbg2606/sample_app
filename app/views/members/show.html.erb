@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @member.name %>
+</p>
+<p>
+  <strong>Post:</strong>
+  <ul>
+  <% @posts.each do |post| %>
+    <li><%= post.title %></li>
+  <% end %>
+  </ul>
+</p>
+
+<%= link_to 'Edit', edit_member_path(@member) %> |
+<%= link_to 'Back', members_path %>
