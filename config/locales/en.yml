@@ -8,10 +8,15 @@ en:
   page_title: "Ruby on Rails Tutorial Sample App"
   layouts:
     header:
-      title: "Sample App"
+      title: "sample app"
       home: "Home"
-      login: "Login"
       help: "Help"
+      login: "Log in"
+      users: "Users"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
+      logout: "Log out"
     footer:
       about: "About"
       contact: "Contact"
@@ -66,7 +71,21 @@ en:
       email: "Email"
     show:
       not_found: "Not found User"
+    create:
+      success: "Welcome to the Sample App"
   shared:
     error_messages:
       the_form_contains: "The form contains"
       error: "Error"
+  sessions:
+    new:
+      btn_signup: "Sign up now!"
+      title: "Login"
+      btn_login: "Login"
+      new_user: "New user?"
+      remember: "Remember me on this computer"
+      forgot_pass: "Forgot password"
+      email: "Email"
+      password: "Password"
+    create:
+      error: "Invalid email password combination"

@@ -1,5 +1,4 @@
 class User < ApplicationRecord
-
   USER_ATTRS = %w(name email password password_confirmation).freeze
 
   before_save :downcase_email
@@ -16,6 +15,13 @@ class User < ApplicationRecord
             length: {minimum: Settings.user.password.min_length}, if: :password
 
   has_secure_password
+
+  class << self
+    def digest string
+      cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST : BCrypt::Engine.cost
+      BCrypt::Password.create string, cost: cost
+    end
+  end
 
   private
 
