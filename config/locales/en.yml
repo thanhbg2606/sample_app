@@ -82,6 +82,8 @@ en:
       not_found: "Not found User"
     create:
       success: "Welcome to the Sample App"
+      info: "Please check your email to activate your account."
+      error: "Created Fail"
     edit:
       provide_title: "Edit user"
       title: "Update your profile"
@@ -119,3 +121,20 @@ en:
       password: "Password"
     create:
       error: "Invalid email password combination"
+      massage: "Account not activated. Check your email for the activation link."
+  account_activations:
+    edit:
+      success: "Account activated!"
+      danger: "Invalid activation link"
+      not_found: "User not found"
+
+  user_mailer:
+    account_activation:
+      subject_mail: "Account activation"
+      title: "Sample App"
+      greeting: "Hi"
+      service_html: "Welcome to the Sample App! Click on the link below to activate your account:"
+      href: "Activate"
+    account_activation_text:
+      greeting: "Hi"
+      service_html: "Welcome to the Sample App! Click on the link below to activate your account:"

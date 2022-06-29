@@ -80,6 +80,8 @@ vi:
       not_found: "Không tìm thấy User"
     create:
       success: "Chảo mừng đến Sample App"
+      info: "Vui lòng kiểm tra email để kích hoạt tài khoản của bạn."
+      error: "Tạo tài khoản thất bại"
     edit:
       provide_title: "Chỉnh sửa Người dùng"
       title: "Cập nhật thông tin cá nhân"
@@ -117,3 +119,19 @@ vi:
       password: "Mật khẩu"
     create:
       error: "Email/mật khẩu không hợp lệ"
+      massage: "Tài khoản chưa được kích hoạt. Hãy kiểm tra email của bạn để biết liên kết kích hoạt."
+  account_activations:
+    edit:
+      success: "Tài khoản đã được kích hoạt"
+      danger: "Liên kết kích hoạt không hợp lệ"
+      not_found: "Không tìm thấy Tài khoản"
+  user_mailer:
+    account_activation:
+      subject_mail: "Kích hoạt tài khoản"
+      title: "Sample App"
+      greeting: "Xin chào"
+      service_html: "Chào mừng bạn đến với Sample App! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn: "
+      href: "Kích hoạt"
+    account_activation_text:
+      greeting: "Xin chào"
+      service_html: "Chào mừng bạn đến với Ứng dụng mẫu! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn: "
