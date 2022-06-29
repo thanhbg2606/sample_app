@@ -77,13 +77,13 @@ vi:
       error: "Lỗi"
   sessions:
     new:
-      btn_signup: "Sign up now!"
-      title: "Login"
-      btn_login: "Login"
-      new_user: "New user?"
-      remember: "Remember me on this computer"
-      forgot_pass: "Forgot password"
+      btn_signup: "Đăng ký ngay!"
+      title: "Đăng nhập"
+      btn_login: "Đăng nhập"
+      new_user: "Tạo tài khoản mới?"
+      remember: "Nhớ mật khẩu"
+      forgot_pass: "Quên mật khẩu"
       email: "Email"
-      password: "Password"
+      password: "Mật khẩu"
     create:
       error: "Email/mật khẩu không hợp lệ"
