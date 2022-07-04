@@ -1,6 +1,8 @@
 class User < ApplicationRecord
   attr_accessor :remember_token
 
+  scope :asc_name_user, ->{order(name: :asc)}
+
   USER_ATTRS = %w(name email password password_confirmation).freeze
 
   before_save :downcase_email
@@ -14,7 +16,8 @@ class User < ApplicationRecord
             uniqueness: true
 
   validates :password, presence: true,
-            length: {minimum: Settings.user.password.min_length}, if: :password
+            length: {minimum: Settings.user.password.min_length}, if: :password,
+            allow_nil: true
 
   has_secure_password
 

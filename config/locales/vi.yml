@@ -58,7 +58,16 @@ vi:
     application_helper:
       base_title: "Ứng dụng mẫu hướng dẫn Ruby On Rails"
   users:
+    form:
+      name: "Tên"
+      email: "Email"
+      password: "Mật khẩu"
+      password_confirmation: "Xác nhận"
     header: "Đây sẽ là trang đăng ký cho người dùng mới."
+    index:
+      provide_title: "Tất cả người dùng"
+      title: "Tất cả người dùng"
+      delete: "Xóa"
     new:
       provide_title: "Đăng_ký"
       title: "Đăng ký"
@@ -71,6 +80,27 @@ vi:
       not_found: "Không tìm thấy User"
     create:
       success: "Chảo mừng đến Sample App"
+    edit:
+      provide_title: "Chỉnh sửa Người dùng"
+      title: "Cập nhật thông tin cá nhân"
+      name: "Tên"
+      email: "Email"
+      password: "Mật khẩu"
+      password_confirmation: "Xác Nhận"
+      btn_submit: "Lưu thay đổi"
+      change: "đổi"
+    update:
+      success: "Hồ sơ cá nhân dã được cập nhật"
+      danger: "Cập nhật thất bại"
+    destroy:
+      success: "Đã xóa người dùng"
+      danger: "Xóa thất bại"
+    logged_in_user:
+      danger: "Vui lòng Login"
+    index:
+      title: "Người dùng"
+      delete: "Xóa"
+      confirm: "You sure?"
   shared:
     error_messages:
       the_form_contains: "Biểu mẫu chứa"

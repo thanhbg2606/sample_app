@@ -7,6 +7,10 @@ user:
     max_length: 50
   password:
     min_length: 6
+users:
+  size: 50
+  edit:
+    email: "https://gravatar.com/emails"
 footer:
   rails_link: https://www.railstutorial.org
   michale_link: https://www.michaelhartl.com/
@@ -26,3 +30,6 @@ screencasts:
 helpers:
   users:
     size: 80
+users_controller:
+  size:
+    per_page: 10
