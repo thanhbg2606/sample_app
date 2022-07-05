@@ -128,6 +128,7 @@ vi:
   user_mailer:
     account_activation:
       subject_mail: "Kích hoạt tài khoản"
+      subject_password: "Cài lại mật khẩu"
       title: "Sample App"
       greeting: "Xin chào"
       service_html: "Chào mừng bạn đến với Sample App! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn: "
@@ -135,3 +136,32 @@ vi:
     account_activation_text:
       greeting: "Xin chào"
       service_html: "Chào mừng bạn đến với Ứng dụng mẫu! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn: "
+    password_reset:
+      subject_password: "Đặt lại mật khẩu"
+      title: "Đặt lại mật khẩu"
+      service_html_first: "Để đặt lại mật khẩu của bạn, hãy nhấp vào liên kết bên dưới:"
+      link_to_title: "Đặt lại mật khẩu"
+      service_html_last: "Liên kết này sẽ hết hạn sau hai giờ."
+      content: "Nếu bạn không yêu cầu đặt lại mật khẩu của mình, vui lòng bỏ qua email này và mật khẩu của bạn sẽ vẫn như cũ."
+  password_resets:
+    create:
+      info: "Email được gửi kèm theo hướng dẫn đặt lại mật khẩu"
+      danger: "Không tìm thấy địa chỉ Email"
+    new:
+      title: "Quên mật khẩu"
+      btn: "Gửi"
+    edit:
+      provide_title: "Đặt lại mật khẩu"
+      title: "Đặt lại mật khẩu"
+      password_confirmation: "Xác nhận mật khẩu"
+      btn_button: "Cập nhật mật khẩu"
+      password: "Mật khẩu"
+      email_not_found: "Không tìm thấy email"
+    update:
+      flash_update_success: "Mật khẩu đã được đặt lại."
+      flash_update_fail: "Cập nhật mật khẩu lỗi."
+      error: "không thể để trống"
+    check_expiration:
+      flash_danger: "Đặt lại mật khẩu đã hết hạn."
+    get_user:
+      email_not_found: "Không tìm thấy email"
