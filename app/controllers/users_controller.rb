@@ -6,7 +6,9 @@ class UsersController < ApplicationController
 
   def edit; end
 
-  def show; end
+  def show
+    @pagy, @microposts = pagy @user.microposts
+  end
 
   def index
     @pagy, @users = pagy User.asc_name_user

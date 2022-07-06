@@ -33,6 +33,7 @@ en:
       rails_href: "Ruby on Rails Tutorial"
       button_title: "Sign up now!"
       welcome: "Welcome to the Sample App"
+      feed: "Micropost Feed"
     help:
       title: "Help"
       provide_title: "Help"
@@ -80,6 +81,7 @@ en:
       email: "Email"
     show:
       not_found: "Not found User"
+      microposts: "Microposts"
     create:
       success: "Welcome to the Sample App"
       info: "Please check your email to activate your account."
@@ -109,6 +111,12 @@ en:
     error_messages:
       the_form_contains: "The form contains"
       error: "Error"
+    user_info:
+      my_profile: "View My Profile"
+      micropost: "micropost"
+    micropost_form:
+      placeholder: "Compose new micropost..."
+      post: "Post"
   sessions:
     new:
       btn_signup: "Sign up now!"
@@ -168,3 +176,22 @@ en:
       flash_danger: "Password reset has expired."
     get_user:
       email_not_found: "Email not found"
+  microposts:
+    micropost:
+      posted: "Posted"
+      ago: "ago."
+      delete: "Xóa"
+      you_sure: "you sure?"
+    create:
+      success: "Micropost created!"
+    destroy:
+      success: "Micropost deleted"
+      danger: "Failed delete"
+  activerecord:
+    errors:
+      models:
+        micropost:
+          attributes:
+            image:
+              too_big: "should be less than 5MB"
+              wrong_format: "must be a valid image format"

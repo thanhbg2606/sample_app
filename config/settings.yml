@@ -8,6 +8,13 @@ user:
   password:
     min_length: 6
   time_password_expired: 2
+micropost:
+  image_path: ["image/jpeg", "image/gif", "image/png"]
+  message: "must be a valid image format"
+  message_size: "should be less than 5MB"
+  less_than: 5
+  length_content: 140
+  resize_to_limit: [500, 500]
 users:
   size: 50
   edit:
@@ -34,3 +41,9 @@ helpers:
 users_controller:
   size:
     per_page: 10
+static_pages:
+  items:
+    max_length: 30
+shared:
+  micropost_form:
+    image_path: "image/jpeg,image/gif,image/png"
