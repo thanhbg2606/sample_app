@@ -107,6 +107,16 @@ en:
       title: "Người dùng"
       delete: "Delete"
       confirm: "Confirm"
+    following:
+      following: "Following"
+    followers:
+      followers: "Followers"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    show_follow:
+      micropost: "Micropost: "
   shared:
     error_messages:
       the_form_contains: "The form contains"
@@ -117,6 +127,9 @@ en:
     micropost_form:
       placeholder: "Compose new micropost..."
       post: "Post"
+    stats:
+      following: "following"
+      followers: "followers"
   sessions:
     new:
       btn_signup: "Sign up now!"
@@ -195,3 +208,6 @@ en:
             image:
               too_big: "should be less than 5MB"
               wrong_format: "must be a valid image format"
+  relationships:
+    follow_fail: "Follow fail"
+    unfollow_fail: "Unfollow fail"
