@@ -47,3 +47,4 @@ static_pages:
 shared:
   micropost_form:
     image_path: "image/jpeg,image/gif,image/png"
+size_30_gravatar: 30
