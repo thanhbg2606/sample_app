@@ -11,14 +11,19 @@ class User < ApplicationRecord
   has_many :followers, through: :passive_relationships, source: :follower
 
   attr_accessor :remember_token, :activation_token, :reset_token
-
-  scope :asc_name_user, ->{order name: :asc}
-  scope :recent_posts, ->{order created_at: :desc}
-
   USER_ATTRS = %w(name email password password_confirmation).freeze
 
-  before_save :downcase_email
-  before_create :create_activation_digest
+
+  has_many :microposts, dependent: :destroy
+  has_many :active_relationships, class_name: Relationship.name,
+            foreign_key: :follower_id,
+            dependent: :destroy
+  has_many :passive_relationships, class_name: Relationship.name,
+            foreign_key: :followed_id,
+            dependent: :destroy
+
+  has_many :following, through: :active_relationships, source: :followed
+  has_many :followers, through: :passive_relationships, source: :follower
 
   validates :name, presence: true,
             length: {maximum: Settings.user.name.max_length}
@@ -31,6 +36,12 @@ class User < ApplicationRecord
   validates :password, presence: true,
             length: {minimum: Settings.user.password.min_length}, if: :password,
             allow_nil: true
+
+  before_save :downcase_email
+  before_create :create_activation_digest
+
+  scope :asc_name_user, ->{order name: :asc}
+  scope :recent_posts, ->{order created_at: :desc}
 
   has_secure_password
 

@@ -1,0 +1,29 @@
+<%= form_with(model: question, html: {class: "row g-3"}) do |form| %>
+  <% if question.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(question.errors.count, "error") %> prohibited this question from being saved:</h2>
+
+      <ul>
+        <% question.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name, "Câu hỏi" %>
+    <%= form.text_field :name, class: "form-control" %>
+  </div>
+  <h3>Các câu trả lời</h3>
+  <div id="answers">
+    <%= form.fields_for :answers do |answer| %>
+      <%= render "answer_fields", f: answer %>
+    <% end %>
+  <%= link_to_add_association 'Thêm bài answer', form, :answers, class: "btn btn-primary" %>
+  <p class="count">Total: <span><%= @question.answers.count %></span></p>
+  </div>
+  <div class="actions">
+    <%= form.submit class: "btn btn-primary" %>
+  </div>
+<% end %>

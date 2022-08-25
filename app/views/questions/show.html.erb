@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Câu hỏi:</strong>
+  <%= @question.name %>
+</p>
+<p>
+  <strong>Câu trả lời:</strong>
+  <ul>
+  <% @answers.each do |answer| %>
+    <li><%= answer.content %></li>
+  <% end %>
+  </ul>
+</p>
+
+<%= link_to 'Edit', edit_question_path(@question) %> |
+<%= link_to 'Back', questions_path %>

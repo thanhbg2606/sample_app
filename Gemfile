@@ -16,6 +16,7 @@ gem "mini_magick"
 gem "mysql2", "~> 0.5"
 gem "pagy"
 gem "pry-rails"
+gem "jwt"
 gem "puma", "~> 5.0"
 gem "rails", "~> 6.1.6"
 gem "rails-controller-testing"
@@ -23,6 +24,15 @@ gem "rails-i18n"
 gem "sass-rails", ">= 6"
 gem "turbolinks", "~> 5"
 gem "webpacker", "~> 5.0"
+gem "cocoon"
+gem "grape"
+gem "grape_on_rails_routes"
+gem "grape-entity"
+gem "capistrano"
+gem "capistrano3-puma"
+gem "capistrano-rails", require: false
+gem "capistrano-bundler", require: false
+gem "capistrano-rvm"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
